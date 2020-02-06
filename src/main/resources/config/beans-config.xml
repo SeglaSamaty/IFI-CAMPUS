@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="candidatDao" class="com.ificampus.mvc.dao.impl.CandidatDaoImpl"/>
+	<bean id="candidatService" class="com.ificampus.mvc.services.impl.CandidatServiceImpl">
+	    <property name="dao" ref="candidatDao"></property>
+	</bean>
+	
+	<bean id="documentDao" class="com.ificampus.mvc.dao.impl.DocumentDaoImpl"/>
+	<bean id="documentService" class="com.ificampus.mvc.services.impl.DocumentServiceImpl">
+	    <property name="dao" ref="documentDao"></property>
+	</bean>
+	
+	<bean id="dossierDao" class="com.ificampus.mvc.dao.impl.DossierDaoImpl"/>
+	<bean id="dossierService" class="com.ificampus.mvc.services.impl.DossierServiceImpl">
+	    <property name="dao" ref="dossierDao"></property>
+	</bean>
+	
+	<bean id="droitDao" class="com.ificampus.mvc.dao.impl.DroitDaoImpl"/>
+	<bean id="droitService" class="com.ificampus.mvc.services.impl.DroitServiceImpl">
+	    <property name="dao" ref="droitDao"></property>
+	</bean>
+	
+    <bean id="entretienDao" class="com.ificampus.mvc.dao.impl.EntretienDaoImpl"/>
+	<bean id="entretienService" class="com.ificampus.mvc.services.impl.EntretienServiceImpl">
+	    <property name="dao" ref="entretienDao"></property>
+	</bean>
+		
+ 	<bean id="etatDao" class="com.ificampus.mvc.dao.impl.EtatDaoImpl"/>
+	<bean id="etatService" class="com.ificampus.mvc.services.impl.EtatServiceImpl">
+	    <property name="dao" ref="etatDao"></property>
+	</bean>
+	
+	<bean id="formationDao" class="com.ificampus.mvc.dao.impl.FormationDaoImpl"/>
+	<bean id="formationService" class="com.ificampus.mvc.services.impl.FormationServiceImpl">
+	    <property name="dao" ref="formationDao"></property>
+	</bean>
+ 	<bean id="levelDao" class="com.ificampus.mvc.dao.impl.LevelDaoImpl"/>
+	<bean id="levelService" class="com.ificampus.mvc.services.impl.LevelServiceImpl">
+	    <property name="dao" ref="levelDao"></property>
+	</bean>
+	
+	<bean id="membreStaffDao" class="com.ificampus.mvc.dao.impl.MembreStaffDaoImpl"/>
+	<bean id="membreStaffService" class="com.ificampus.mvc.services.impl.MembreStaffServiceImpl">
+	    <property name="dao" ref="membreStaffDao"></property>
+	</bean>
+	
+	<bean id="messageDao" class="com.ificampus.mvc.dao.impl.MessageDaoImpl"/>
+	<bean id="messageService" class="com.ificampus.mvc.services.impl.MessageServiceImpl">
+	    <property name="dao" ref="messageDao"></property>
+	</bean>
+	
+	<bean id="paysDao" class="com.ificampus.mvc.dao.impl.PaysDaoImpl"/>
+	<bean id="paysService" class="com.ificampus.mvc.services.impl.PaysServiceImpl">
+	    <property name="dao" ref="paysDao"></property>
+	</bean>
+	
+	<bean id="personneDao" class="com.ificampus.mvc.dao.impl.PersonneDaoImpl"/>
+	<bean id="personneService" class="com.ificampus.mvc.services.impl.PersonneServiceImpl">
+	    <property name="dao" ref="personneDao"></property>
+	</bean>
+	
+	<bean id="roleDao" class="com.ificampus.mvc.dao.impl.RoleDaoImpl"/>
+	<bean id="roleService" class="com.ificampus.mvc.services.impl.RoleServiceImpl">
+	    <property name="dao" ref="roleDao"></property>
+	</bean>
+	
+	<bean id="typeDao" class="com.ificampus.mvc.dao.impl.TypeDaoImpl"/>
+	<bean id="typeService" class="com.ificampus.mvc.services.impl.TypeServiceImpl">
+	    <property name="dao" ref="typeDao"></property>
+	</bean>
+	
+	<bean id="universityDao" class="com.ificampus.mvc.dao.impl.UniversityDaoImpl"/>
+	<bean id="universityService" class="com.ificampus.mvc.services.impl.UniversityServiceImpl">
+	    <property name="dao" ref="universityDao"></property>
+	</bean>	
+	
+	
+</beans>
